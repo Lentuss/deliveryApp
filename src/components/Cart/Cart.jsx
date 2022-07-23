@@ -6,7 +6,6 @@ class Cart extends Component {
   //   state = { quantity: 1 };
   render() {
     const { items, addQuantity } = this.props;
-    console.log(items);
     return (
       <CartContainer>
         {items.map(item => (

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CartContainer = styled.ul`
   display: flex;
+  width: 100%;
   align-items: flex-start;
   align-content: start;
 
