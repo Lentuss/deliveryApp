@@ -2,41 +2,41 @@
   {
     "name": "BaBurger",
     "price": 100,
-    "url": "https://pixabay.com/get/g372572dfd917cd1ea2aaf7a9db5343ae2707e524c9d08a2e321c9e42e15f9140c82c8cd540e8c332094c80714fca8dc5f4ef9c82af15df13e2d7a3e116091415_640.jpg"
+    "url": "https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Big BaBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/g2a59010ada49cf5c89fe9a54669a6714a1d80047a4204baaf43e0c7c3c0477a7065cafdfdc9fc995cd1d91ba87ee39ea9d9b270fa32dc6d8fe60bb4c6c6847b1_640.jpg"
+    "price": 130,
+    "url": "https://images.pexels.com/photos/1199960/pexels-photo-1199960.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Double BaBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/g86188cd9dadd8e9e58df5383768d1a773894471d9e9eff7a8b0dfbe6b0b879ec51ba2c578a42ed59591cee3126f296dfd7f27e48a3733255b87eaf7d71aced9b_640.jpg"
+    "price": 140,
+    "url": "https://images.pexels.com/photos/750073/pexels-photo-750073.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Cheese BaBurger",
     "price": 100,
-    "url": "https://pixabay.com/get/g8a1e891e54e3e7829db4d467fe92c7ed69bbf162a456b518a56a20934c8152ada5a6474abe319664fbecea68d97f1f42585b947963800a232e905076255471e1_640.jpg"
+    "url": "https://images.pexels.com/photos/2282532/pexels-photo-2282532.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "DedBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/g609de2f87a3d48976b5adb1a8d218995e6c0b5980e25dd1ed90e5509586c0463b9d8da80828c05f7963c841ec1959631ef663bb2bb7f1af8b8ce3186d868c56e_640.jpg"
+    "price": 150,
+    "url": "https://images.pexels.com/photos/3219547/pexels-photo-3219547.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Grand DedBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/geb79280ff1e3d154a447c937d8fa823ca7ec9b76acf138fc85d2a9f4cc3bd924a3c4631283db10f1288ca76f7caba0886a3cb8db243e5f0b16c05b5e34b26a13_640.jpg"
+    "price": 190,
+    "url": "https://images.pexels.com/photos/918581/pexels-photo-918581.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Original DedBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/g834b06d45c528d7726d7117a671b9c74b481a8fb2180cea33c2457b9a02f5fa57577fd19be19af3904f2bc5b8789e257a11f912ee1bb06c65335c11bcaa1c3fc_640.jpg"
+    "price": 140,
+    "url": "https://images.pexels.com/photos/2725744/pexels-photo-2725744.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "CucumBaBurger",
-    "price": 100,
-    "url": "https://pixabay.com/get/g9c14def138a8483761e0ccefef31c3ac90cfaca1d4e71df6eed642ea98d3552992689876d43c998438a8b12bfe1cec282e2099314d0d67bdc8a20d581327bfd8_640.jpg"
+    "price": 120,
+    "url": "https://images.pexels.com/photos/1998927/pexels-photo-1998927.jpeg?auto=compress&cs=tinysrgb&w=600"
   }
 ]

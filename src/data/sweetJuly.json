@@ -2,41 +2,41 @@
   {
     "name": "Cheese Dream",
     "price": 100,
-    "url": "https://pixabay.com/get/ga2f253f14eecd3c21ffcd799e5f616c91aa024d6e2cd2a6058e90c89180aa67502aa49b17d35be31e2345103b55c8d6d5f74630205a8807d13ca383e227e8582_640.jpg"
+    "url": "https://images.pexels.com/photos/14107/pexels-photo-14107.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Strawberry Swirl",
     "price": 100,
-    "url": "https://pixabay.com/get/g46c9279a870717114c721c2f84289583a42b1d47f24ac8cee7979dd0f0d8e0d97b8c55301204f308fc32ed23df46d9a627ed652e2dfdf2639c97f17dca2e4f2e_640.jpg"
+    "url": "https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Pumpkin Trick",
     "price": 100,
-    "url": "https://pixabay.com/get/gc1f28da9ce19ee482be108e6b4ee858e92b35675072f57bc961136a00ed63e8948eca78eb8da4502a41db7fc1ed99d136186452ae3ac3e82192b3858aa66a7a6_640.jpg"
+    "url": "https://images.pexels.com/photos/1543800/pexels-photo-1543800.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
-    "name": "Fluffy Donuts",
+    "name": "Absolutely Purple",
     "price": 100,
-    "url": "https://pixabay.com/get/g2c75549b214bd3ba400b26dbbb4d9b39194907705efaa6c57bfda6ce6a6b76c5fdb62023ab871bbc97b541249e28022c7e01cfa5666c8d9ab03732256ec5a613_640.jpg"
+    "url": "https://images.pexels.com/photos/806363/pexels-photo-806363.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Frutty Weekend",
     "price": 100,
-    "url": "https://pixabay.com/get/gcfe1821648ff5c0dfaf0a3299c5a54d3ee3d4b48a9218c8cd1c0793dcf1ce9a08612a6b34a1c5bb265391a12e5ac0feaa5fa3222776de8511e694b009dfe2b2e_640.jpg"
+    "url": "https://images.pexels.com/photos/827516/pexels-photo-827516.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Dad`s Favourite Cake",
     "price": 100,
-    "url": "https://pixabay.com/get/g3dcab96b13e1dbec85c2b55c2146468785b6ad1c7f7514c6b9daf1837816e42ccbf21734d59c27fd5b9b46d0f0860dc912dfc94561e8af974ba60fa12552f3be_640.jpg"
+    "url": "https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Very Berry",
     "price": 100,
-    "url": "https://pixabay.com/get/g1fefefaf1ff6148473aeda4cf6cb84b66806b7a5946d3627b1c4a4e26b32e9487c9c74f8cfb1785b1004722b14e312f5cdf9cfcadee35fff6db651bec0429dfa_640.jpg"
+    "url": "https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
-    "name": "Mommy`s pie",
+    "name": "Mommy`s Cake",
     "price": 100,
-    "url": "https://pixabay.com/get/gac8fae444712dc036f4655dd94ab0e37529411c2dc7a0722e513ee424bfd364e6189877bb46e3e43645850bbaad6462b7f7efc265bbb433b82957fb95a1a321e_640.jpg"
+    "url": "https://images.pexels.com/photos/4686833/pexels-photo-4686833.jpeg?auto=compress&cs=tinysrgb&w=600"
   }
 ]

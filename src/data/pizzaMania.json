@@ -2,41 +2,41 @@
   {
     "name": "Veggie",
     "price": 100,
-    "url": "https://pixabay.com/get/g4a23cc0774d6548571e2fc9aab39e36a11cb8e8597de5c8cfbb9ecada56d5f45332f4b40148369ddfd186d527e544365_640.jpg"
+    "url": "https://images.pexels.com/photos/2619970/pexels-photo-2619970.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Spicy",
-    "price": 100,
-    "url": "https://pixabay.com/get/g623a10bacc05c73608a22977406e4cc7f8886119cb2893cbeda06a68a5da7a678bd06092cc35c69fc39047e09b50392e814db708705fd61fe6e9828f66b03300_640.jpg"
+    "price": 150,
+    "url": "https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Italy",
-    "price": 100,
-    "url": "https://pixabay.com/get/g770822e2ee3034b77bcef1583204321a7d5a4fa7c4cd74de97f4c66c1afc6fab949c27e9837e93ad730f4ece23088dccdfa3d6a93bb56387454836c1cfd77a75_640.jpg"
+    "price": 190,
+    "url": "https://images.pexels.com/photos/1435903/pexels-photo-1435903.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Super-tomato",
-    "price": 100,
-    "url": "https://pixabay.com/get/g9ff74ee32eb4e88c82693277c42ee1a6e52f086781b15a36389023033e3d07cb6f77f4e9ddfcb5da9b947d702da5e7b93a0cee3f4a76a8a9c0ca508d932b805b_640.jpg"
+    "price": 310,
+    "url": "https://images.pexels.com/photos/162744/tomatoes-tomato-quiche-red-yellow-162744.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Arugula",
-    "price": 100,
-    "url": "https://pixabay.com/get/g4191685f9bd24b3a7ed7c477df057009ef4b2eefe2a0b17c8b5ae20e7c67e5ad66d882396e58940acdfc363d3b3aa10674a45df624b3912610b9c52b4aef7093_640.jpg"
+    "price": 240,
+    "url": "https://images.pexels.com/photos/263041/pexels-photo-263041.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Rainbow",
-    "price": 100,
-    "url": "https://pixabay.com/get/gef81e9a7c0dd99c4f55b0b16676dc4f77dde4f6f25ebdf3b6dd76bf36e1a02cf4b457e426d9779c0ed09f1253f9396aa51af319d77cce4d68cf226008cfa4a74_640.jpg"
+    "price": 210,
+    "url": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Pepperoni",
-    "price": 100,
-    "url": "https://pixabay.com/get/gb78ef49c5492eec96aca7cbc451618aa4e0b89527b2eee80fceab54ec163b3dc5557001b3b742925ff4e3ac59749f8ce06c6b9c243267859814cdc18508a7de2_640.jpg"
+    "price": 120,
+    "url": "https://images.pexels.com/photos/4109128/pexels-photo-4109128.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
     "name": "Seafood",
-    "price": 100,
-    "url": "https://pixabay.com/get/g4a0b3421a8f0226f4b080f3ea6551255fea03bb41b9d02221a8ab9c75a29e3620edf288e112e7bf15e6a7df07db50a509bdfa7e77a93cde776a35eeeb08d7eaa_1280.jpg"
+    "price": 180,
+    "url": "https://images.pexels.com/photos/3644/pizza-restaurant-dinner-lunch.jpg?auto=compress&cs=tinysrgb&w=600"
   }
 ]

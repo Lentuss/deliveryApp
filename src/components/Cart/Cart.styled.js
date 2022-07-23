@@ -2,11 +2,14 @@ import styled from 'styled-components';
 
 export const CartContainer = styled.ul`
   display: flex;
-  margin: -18px;
-  min-width: calc(75vw-36px);
+  align-items: flex-start;
+  align-content: start;
+
+  flex-wrap: wrap;
 
   overflow-y: scroll;
-  margin: 0 auto;
+  overflow-x: hidden;
+
   padding: 10px;
   background-color: #fff;
   border-radius: 10px;
@@ -14,10 +17,12 @@ export const CartContainer = styled.ul`
 `;
 
 export const CartListItem = styled.li`
-  border-radius: 2px;
+  display: flex;
+
+  flex-basis: calc((100% - 60px) / 2);
+  height: 240px;
   padding: 20px 20px;
-  flex-basis: calc((100%-36px) / 2);
-  margin: 18px;
+  margin: 15px;
 
   background-color: rgb(193, 193, 193);
   box-shadow: 2px 2px 10px black;

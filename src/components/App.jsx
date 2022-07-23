@@ -11,24 +11,13 @@ import SideBar from './Sidebar';
 import CartForm from './CartForm';
 import Cart from './Cart';
 import Summary from './Summary';
-
-import burgers from '../data/baBurger.json';
-import homeFoods from '../data/homeFood.json';
-import pizzas from '../data/pizzaMania.json';
-import rolls from '../data/rollAndRoll.json';
-import sweets from '../data/sweetJuly.json';
+import Notification from './Notify';
 
 /// ============================================================
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
-import { getDatabase, ref, set } from 'firebase/database';
+import { getDatabase, ref, set, child, get } from 'firebase/database';
 
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: 'AIzaSyDp7wpGZH4XoJ4X_7_69GNQaYTzi6onXrM',
   authDomain: 'deliveryapp-73c4e.firebaseapp.com',
@@ -41,64 +30,89 @@ const firebaseConfig = {
   measurementId: 'G-2F8FGV87FW',
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
+initializeApp(firebaseConfig);
 
-// const database = getDatabase();
 /// =============================================================
 
 class App extends Component {
   state = {
     currentPage: 'shop',
-    menu: burgers,
+    menu: '',
     menuItems: [],
     cartItems: [],
     sum: null,
+    activeShop: '',
   };
 
   componentDidMount() {
-    this.setMenuItems();
+    // this.getData();
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.menu !== prevState.menu) {
-      this.setMenuItems();
+      this.getData();
     }
     if (this.state.cartItems !== prevState.cartItems) {
       this.setState({ sum: this.getSum() });
+      this.checkActive();
     }
   }
 
+  checkActive = shop => {
+    if (this.state.cartItems.length !== 0 && this.state.activeShop !== shop) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  getData = () => {
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, `${this.state.menu}`))
+      .then(snapshot => {
+        if (snapshot.exists()) {
+          return snapshot.val();
+        } else {
+          console.log('No data available');
+        }
+      })
+      .then(res => {
+        this.setMenuItems(res);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
   getCurrentPage = page => {
     this.setState({ currentPage: page });
   };
 
   setMenu = name => {
+    this.setState({ activeShop: name });
     switch (name) {
       case 'BaBurger':
-        this.setState({ menu: burgers });
+        this.setState({ menu: 'burgers' });
         break;
       case 'Sweet July':
-        this.setState({ menu: sweets });
+        this.setState({ menu: 'cakes' });
         break;
       case 'Roll`n`Roll':
-        this.setState({ menu: rolls });
+        this.setState({ menu: 'rolls' });
         break;
       case 'Home Foods':
-        this.setState({ menu: homeFoods });
+        this.setState({ menu: 'homeFood' });
         break;
       case 'Pizza Mania':
-        this.setState({ menu: pizzas });
+        this.setState({ menu: 'pizzas' });
         break;
       default:
         break;
     }
   };
 
-  setMenuItems = () => {
+  setMenuItems = data => {
     this.setState({
-      menuItems: this.state.menu.map(item => ({ id: nanoid(), ...item })),
+      menuItems: data.map(item => ({ id: nanoid(), ...item })),
     });
   };
 
@@ -135,10 +149,13 @@ class App extends Component {
       return;
     }
   };
+
   handleSubmit = data => {
+    const { cartItems } = this.state;
     const { name, email, number, address } = data;
     this.writeUserData(nanoid(), name, email, number, address);
-    localStorage.setItem('user contacts', JSON.stringify(data));
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+    this.setState({ cartItems: [] });
   };
 
   getSum = () => {
@@ -161,7 +178,6 @@ class App extends Component {
 
   render() {
     const shopsList = [
-      //////////////////////////////////////////////////////////////////////
       'BaBurger',
       'Sweet July',
       'Roll`n`Roll',
@@ -176,10 +192,17 @@ class App extends Component {
         {currentPage === 'shop' && (
           <MainContainer>
             <SideBar>
-              <ShopList onClick={this.setMenu} names={shopsList} />
+              <ShopList
+                onClick={this.setMenu}
+                names={shopsList}
+                isDisabled={this.checkActive}
+              />
             </SideBar>
-
-            <ItemsList items={menuItems} addToCart={this.addToCart} />
+            {menuItems.length !== 0 ? (
+              <ItemsList items={menuItems} addToCart={this.addToCart} />
+            ) : (
+              <Notification message={'Choose the restoraunt, please'} />
+            )}
           </MainContainer>
         )}
         {currentPage === 'cart' && (
@@ -194,7 +217,7 @@ class App extends Component {
               )}
 
               {cartItems.length === 0 && (
-                <div>Your cart is empty</div> ////////////////////////////////////////////////////////////////////////////////
+                <Notification message={'Your cart is empty'} />
               )}
             </MainContainer>
             <Summary sum={sum}></Summary>

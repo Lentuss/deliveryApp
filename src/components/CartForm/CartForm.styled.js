@@ -3,12 +3,14 @@ import styled from 'styled-components';
 export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
+
   max-width: 25vw;
   max-height: calc(100vh - 100px);
   width: 100%;
 
   padding: 20px;
   margin-right: 20px;
+
   background-color: rgb(200, 200, 200);
 
   border-radius: 10px;
