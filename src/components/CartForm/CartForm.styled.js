@@ -5,7 +5,7 @@ export const ContactForm = styled.form`
   flex-direction: column;
 
   max-width: 25vw;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 160px);
   width: 100%;
 
   padding: 20px;

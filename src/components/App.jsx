@@ -40,7 +40,7 @@ class App extends Component {
     menu: '',
     menuItems: [],
     cartItems: [],
-    sum: null,
+    sum: 0,
     activeShop: '',
   };
 
