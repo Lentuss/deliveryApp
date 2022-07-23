@@ -24,7 +24,6 @@ const CartItem = ({ id, name, price, url, quantity, addQuantity }) => {
             step="1"
             onChange={e => {
               addQuantity(id, e.currentTarget.value);
-              console.log(e.currentTarget.value);
             }}
           />
         </label>

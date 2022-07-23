@@ -14,6 +14,7 @@ export const ImageThumb = styled.div`
 
 export const ItemImg = styled.img`
   display: block;
+  margin-right: 20px;
   max-width: 320px;
 `;
 
@@ -28,14 +29,14 @@ export const AttrContainer = styled.div`
 
   align-items: center;
   text-align: start;
-  padding: 20px;
 `;
 
 export const ItemPrice = styled.span`
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 export const QuantityInput = styled.input`
-  max-width: 150px;
+  width: 100%;
+  padding: 10px;
 `;

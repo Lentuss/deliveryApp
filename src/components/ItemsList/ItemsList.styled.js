@@ -8,7 +8,7 @@ export const Container = styled.ul`
   grid-gap: 36px;
   overflow-y: scroll;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 10px;
   list-style: none;
@@ -16,7 +16,7 @@ export const Container = styled.ul`
 
 export const ListItem = styled.li`
   border-radius: 2px;
-  padding: 20px 20px;
+  padding: 10px 20px;
 
   background-color: rgb(193, 193, 193);
   box-shadow: 2px 2px 10px black;
