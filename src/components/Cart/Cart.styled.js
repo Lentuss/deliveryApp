@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const CartContainer = styled.ul`
   display: flex;
   width: 100%;
+  max-height: calc(100vh - 160px);
+
   align-items: flex-start;
   align-content: start;
 
@@ -28,5 +30,4 @@ export const CartListItem = styled.li`
   background-color: rgb(193, 193, 193);
   box-shadow: 2px 2px 10px black;
   border-radius: 5px;
-  /* flex-shrink: 1; */
 `;

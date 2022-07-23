@@ -32,7 +32,7 @@ export const LabelTitle = styled.span`
 export const FormInput = styled.input`
   box-sizing: border-box;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   font-size: 18px;
   border-radius: 5px;
 `;
