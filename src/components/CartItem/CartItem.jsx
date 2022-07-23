@@ -10,7 +10,7 @@ import {
 const CartItem = ({ id, name, price, url, quantity, addQuantity }) => {
   return (
     <CartCard>
-      <ItemImg src={url} alt={name} />
+      <ItemImg src={url} alt={name} width="280" />
       <AttrContainer>
         <ItemTitle>{name}</ItemTitle>
         <ItemPrice>

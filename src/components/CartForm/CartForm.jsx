@@ -11,7 +11,7 @@ class CartForm extends Component {
     name: '',
     email: '',
     number: '',
-    adress: '',
+    address: '',
   };
 
   reset = () => {
@@ -19,7 +19,7 @@ class CartForm extends Component {
       name: '',
       number: '',
       email: '',
-      adress: '',
+      address: '',
     });
   };
 
@@ -84,14 +84,14 @@ class CartForm extends Component {
           />
         </FormLabel>
         <FormLabel>
-          <LabelTitle>Adress</LabelTitle>
+          <LabelTitle>Address</LabelTitle>
           <FormInput
             type="text"
-            name="adress"
+            name="address"
             pattern="^[a-zA-Zа-яА-Я-0-9]+(([' -][a-zA-Zа-яА-Я-0-9 ])?[a-zA-Zа-яА-Я-0-9]*)*$"
             title="Adress may contain only letters, apostrophe, digits, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             onChange={this.handleInput}
-            value={this.state.adress}
+            value={this.state.address}
             required
           />
         </FormLabel>

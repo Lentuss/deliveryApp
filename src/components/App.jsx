@@ -18,6 +18,36 @@ import pizzas from '../data/pizzaMania.json';
 import rolls from '../data/rollAndRoll.json';
 import sweets from '../data/sweetJuly.json';
 
+/// ============================================================
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+import { getDatabase, ref, set } from 'firebase/database';
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: 'AIzaSyDp7wpGZH4XoJ4X_7_69GNQaYTzi6onXrM',
+  authDomain: 'deliveryapp-73c4e.firebaseapp.com',
+  databaseURL:
+    'https://deliveryapp-73c4e-default-rtdb.europe-west1.firebasedatabase.app',
+  projectId: 'deliveryapp-73c4e',
+  storageBucket: 'deliveryapp-73c4e.appspot.com',
+  messagingSenderId: '596734830143',
+  appId: '1:596734830143:web:9b23a50c5741d5f700ba8a',
+  measurementId: 'G-2F8FGV87FW',
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+
+// const database = getDatabase();
+/// =============================================================
+
 class App extends Component {
   state = {
     currentPage: 'shop',
@@ -106,6 +136,8 @@ class App extends Component {
     }
   };
   handleSubmit = data => {
+    const { name, email, number, address } = data;
+    this.writeUserData(nanoid(), name, email, number, address);
     localStorage.setItem('user contacts', JSON.stringify(data));
   };
 
@@ -115,6 +147,16 @@ class App extends Component {
       (total, item) => total + item.quantity * item.price,
       0
     );
+  };
+
+  writeUserData = (userId, name, email, number, address) => {
+    const db = getDatabase();
+    set(ref(db, 'users/' + userId), {
+      username: name,
+      email: email,
+      number: number,
+      address: address,
+    });
   };
 
   render() {

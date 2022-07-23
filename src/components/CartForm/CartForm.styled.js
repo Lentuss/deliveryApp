@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
-  max-width: 30vw;
-  max-height: calc(100vh - 20px);
+  max-width: 25vw;
+  max-height: calc(100vh - 100px);
   width: 100%;
 
   padding: 20px;
