@@ -45,11 +45,13 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.getCartData();
+    if (localStorage.cart && localStorage.menu && localStorage.activeShop) {
+      this.getCartData();
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.state.menu !== prevState.menu) {
+    if (this.state.menu !== prevState.menu && this.state.menu !== '') {
       this.getData();
     }
     if (this.state.cartItems !== prevState.cartItems) {
@@ -96,7 +98,6 @@ class App extends Component {
       menu: JSON.parse(localStorage.menu),
       activeShop: JSON.parse(localStorage.activeShop),
     });
-    this.setState({ menu: JSON.parse(localStorage.menu) });
   };
 
   saveCartData = () => {
@@ -173,7 +174,13 @@ class App extends Component {
     const { cartItems } = this.state;
     const { name, email, number, address } = data;
     this.writeUserData(nanoid(), name, email, number, address, cartItems);
-    this.setState({ cartItems: [] });
+    this.setState({
+      menuItems: [],
+      cartItems: [],
+      menu: '',
+      activeShop: '',
+      currentPage: 'shop',
+    });
     localStorage.clear();
   };
 
@@ -207,7 +214,7 @@ class App extends Component {
     return (
       <>
         <GlobalStyle />
-        <Navigation onClick={this.getCurrentPage} />
+        <Navigation onClick={this.getCurrentPage} cart={this.state.cartItems} />
         {currentPage === 'shop' && (
           <MainContainer>
             <SideBar>

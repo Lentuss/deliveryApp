@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavContainer, NavButton } from './Navigation.styled';
+import { NavContainer, CartCount, NavButton } from './Navigation.styled';
 
-const Navigation = ({ onClick }) => {
+const Navigation = ({ onClick, cart }) => {
   return (
     <NavContainer>
       <NavButton
@@ -16,6 +16,7 @@ const Navigation = ({ onClick }) => {
         name="cart"
         onClick={e => onClick(e.currentTarget.name)}
       >
+        {cart.length !== 0 && <CartCount>{cart.length} </CartCount>}
         Shoping cart
       </NavButton>
     </NavContainer>
