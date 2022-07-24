@@ -45,7 +45,7 @@ class App extends Component {
   };
 
   componentDidMount() {
-    // this.getData();
+    this.getCartData();
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -53,6 +53,8 @@ class App extends Component {
       this.getData();
     }
     if (this.state.cartItems !== prevState.cartItems) {
+      this.saveCartData();
+
       this.setState({ sum: this.getSum() });
       this.checkActive();
     }
@@ -83,8 +85,25 @@ class App extends Component {
         console.error(error);
       });
   };
+
   getCurrentPage = page => {
     this.setState({ currentPage: page });
+  };
+
+  getCartData = () => {
+    this.setState({
+      cartItems: JSON.parse(localStorage.cart),
+      menu: JSON.parse(localStorage.menu),
+      activeShop: JSON.parse(localStorage.activeShop),
+    });
+    this.setState({ menu: JSON.parse(localStorage.menu) });
+  };
+
+  saveCartData = () => {
+    const { cartItems, menu, activeShop } = this.state;
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+    localStorage.setItem('menu', JSON.stringify(menu));
+    localStorage.setItem('activeShop', JSON.stringify(activeShop));
   };
 
   setMenu = name => {
@@ -153,9 +172,9 @@ class App extends Component {
   handleSubmit = data => {
     const { cartItems } = this.state;
     const { name, email, number, address } = data;
-    this.writeUserData(nanoid(), name, email, number, address);
-    localStorage.setItem('cart', JSON.stringify(cartItems));
+    this.writeUserData(nanoid(), name, email, number, address, cartItems);
     this.setState({ cartItems: [] });
+    localStorage.clear();
   };
 
   getSum = () => {

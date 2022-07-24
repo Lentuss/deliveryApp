@@ -5,9 +5,9 @@ export const SideBarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 20vw;
+  max-width: 25vw;
   width: 100%;
-  max-height: calc(100vh - 160px);
+  max-height: calc(100vh - 100px);
   padding: 20px;
   margin-right: 20px;
   border-radius: 10px;

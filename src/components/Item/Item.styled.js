@@ -7,7 +7,7 @@ export const ItemCard = styled.div`
 
 export const ImageThumb = styled.div`
   display: block;
-  height: 230px;
+  height: 180px;
   margin-bottom: 20px;
   overflow: hidden;
   background-color: #fff;

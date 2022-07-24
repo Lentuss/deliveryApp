@@ -14,7 +14,7 @@ const Item = ({ id, name, price, url, addToCart }) => {
   return (
     <ItemCard>
       <ImageThumb>
-        <ItemImg src={url} alt={name} width="380px" />
+        <ItemImg src={url} alt={name} width="400px" />
       </ImageThumb>
 
       <ItemTitle>{name}</ItemTitle>

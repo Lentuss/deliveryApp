@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CartContainer = styled.ul`
   display: flex;
   width: 100%;
-  max-height: calc(100vh - 160px);
+  max-height: calc(100vh - 100px);
 
   align-items: flex-start;
   align-content: start;

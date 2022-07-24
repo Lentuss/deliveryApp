@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.ul`
   display: grid;
   max-width: calc(100vw - 60px);
-  max-height: calc(100vh - 160px);
+  max-height: calc(100vh - 100px);
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 36px;
   overflow-y: scroll;

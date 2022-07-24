@@ -12,7 +12,7 @@ export const ShopListItem = styled.li`
 
 export const Shop = styled.button`
   display: block;
-  min-width: 15vw;
+  min-width: 20vw;
   border-radius: 5px;
   box-shadow: 2px 2px 10px black;
   background-color: #fff;
