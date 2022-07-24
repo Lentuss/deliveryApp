@@ -192,13 +192,14 @@ class App extends Component {
     );
   };
 
-  writeUserData = (userId, name, email, number, address) => {
+  writeUserData = (userId, name, email, number, address, cartItems) => {
     const db = getDatabase();
     set(ref(db, 'users/' + userId), {
       username: name,
       email: email,
       number: number,
       address: address,
+      cartItems: cartItems,
     });
   };
 

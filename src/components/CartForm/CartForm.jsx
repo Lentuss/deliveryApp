@@ -88,7 +88,7 @@ class CartForm extends Component {
           <FormInput
             type="text"
             name="address"
-            pattern="^[a-zA-Zа-яА-Я-0-9]+((['. -][a-zA-Zа-яА-Я-0-9 ])?[a-zA-Zа-яА-Я-0-9]*)*$"
+            pattern="^[a-zA-Zа-яА-Я-0-9]+((['.,/ -][a-zA-Zа-яА-Я-0-9 ])?[a-zA-Zа-яА-Я-0-9]*)*$"
             title="Adress may contain only letters, apostrophe, digits, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             onChange={this.handleInput}
             value={this.state.address}
