@@ -3,12 +3,12 @@ Deploy link lentuss.github.io/deliveryapp/
 The site is single-page to increase productivity, re-rendered by condition. The
 shopping cart is stored in local storage to store order data FireBase is used.
 
-In case of repeated requests, add the already added item to the cart, the active
-page is replaced in the basket, to continue interaction with the number of
-goods. Since in the template should not have a noticeable "delete from the
-basket" button, deletion is done by reducing the amount to 0. The button can be
-added. At after reloading the page, both the shopping cart and the active store
-are saved for possibilities of continuing its filling.
+When trying to re-add an item to the basket that has already been added, the
+page is active changes to the shopping cart, to continue interacting with the
+number of products. Since in the template did not have an explicit "remove from
+the basket" button, the deletion occurs smoothly reducing the count to 0. A
+button can be added if needed. After reloading the page saves both the shopping
+cart and the active store for the possibility of continuing its filling.
 
 Посилання на деплой lentuss.github.io/deliveryapp/
 
