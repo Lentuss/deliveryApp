@@ -94,9 +94,9 @@ class App extends Component {
 
   getCartData = () => {
     this.setState({
-      cartItems: JSON.parse(localStorage.cart),
-      menu: JSON.parse(localStorage.menu),
-      activeShop: JSON.parse(localStorage.activeShop),
+      cartItems: JSON.parse(localStorage.getItem('cart')),
+      menu: JSON.parse(localStorage.getItem('menu')),
+      activeShop: JSON.parse(localStorage.getItem('activeShop')),
     });
   };
 
