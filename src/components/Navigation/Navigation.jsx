@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavContainer, CartCount, NavButton } from './Navigation.styled';
 
 const Navigation = ({ onClick, cart }) => {
@@ -21,5 +22,10 @@ const Navigation = ({ onClick, cart }) => {
       </NavButton>
     </NavContainer>
   );
+};
+
+Navigation.propType = {
+  onClick: PropTypes.func.isRequired,
+  cart: PropTypes.array.isRequired,
 };
 export default Navigation;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { SideBarContainer } from './Sidebar.styled';
 
 const SideBar = ({ children }) => {
@@ -9,4 +10,7 @@ const SideBar = ({ children }) => {
   );
 };
 
+SideBar.propTypes = {
+  children: PropTypes.element,
+};
 export default SideBar;

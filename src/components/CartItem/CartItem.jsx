@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import {
   CartCard,
   ItemImg,
@@ -30,6 +32,15 @@ const CartItem = ({ id, name, price, url, quantity, addQuantity }) => {
       </AttrContainer>
     </CartCard>
   );
+};
+
+CartItem.propTypes = {
+  addQuantity: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
 };
 
 export default CartItem;

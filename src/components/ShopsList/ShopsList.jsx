@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { List, ShopListItem, Shop } from './ShopsList.styled';
 
 const ShopList = ({ names, onClick, isDisabled }) => {
@@ -18,4 +19,11 @@ const ShopList = ({ names, onClick, isDisabled }) => {
     </List>
   );
 };
+
+ShopList.propTypes = {
+  names: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onClick: PropTypes.func.isRequired,
+  isDisabled: PropTypes.any.isRequired,
+};
+
 export default ShopList;

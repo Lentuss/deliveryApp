@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 import {
   ItemCard,
@@ -32,8 +32,12 @@ const Item = ({ id, name, price, url, addToCart }) => {
     </ItemCard>
   );
 };
-
-Item.defaultProps = {
-  url: 'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=600',
+Item.propTypes = {
+  addToCart: PropTypes.func.isRequired,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  url: PropTypes.string.isRequired,
 };
+
 export default Item;

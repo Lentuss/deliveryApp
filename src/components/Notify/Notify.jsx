@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Notification = ({ message }) => {
@@ -9,4 +10,8 @@ const NotificationMes = styled.p`
   font-size: 32px;
   font-style: italic;
 `;
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+};
 export default Notification;

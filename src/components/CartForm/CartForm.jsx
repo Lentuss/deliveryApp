@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   ContactForm,
   FormLabel,
@@ -99,4 +100,8 @@ class CartForm extends Component {
     );
   }
 }
+
+CartForm.propTypes = {
+  addQuantity: PropTypes.func.isRequired,
+};
 export default CartForm;
